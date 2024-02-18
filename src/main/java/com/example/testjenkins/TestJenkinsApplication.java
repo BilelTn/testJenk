@@ -11,7 +11,7 @@ public class TestJenkinsApplication {
         System.out.println("hello from jenkins test spring boot");
         System.out.println("test apres le push et declenchement automatique des build");
 
-        System.out.println("test apres le push et webhook");
+        System.out.println("test apres le push et sonar scan");
     }
 
 }
