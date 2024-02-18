@@ -9,7 +9,7 @@ public class TestJenkinsApplication {
     public static void main(String[] args) {
         SpringApplication.run(TestJenkinsApplication.class, args);
         System.out.println("hello from jenkins test and githookspring boot");
-        System.out.println("test apres le push et declenchement automatique des build");
+        System.out.println("test aprtes le push et declenchement automatique des build");
 
         System.out.println("test apres jh le push web hook et sonar scan");
     }
