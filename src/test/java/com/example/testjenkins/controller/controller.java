@@ -27,6 +27,7 @@ class UserControllerTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
+        System.out.println("debut de test");
     }
 
     @Test
