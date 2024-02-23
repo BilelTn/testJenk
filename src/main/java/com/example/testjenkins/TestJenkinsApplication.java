@@ -14,7 +14,7 @@ public class TestJenkinsApplication {
         System.out.println("test apres le push  declenchement automatique des build");
         System.out.println("test apres  le push web hook et sonar scan");
         System.out.println("teste push");
-        System.out.println("teste push265");
+        System.out.println("teste push25");
     }
 
 }
