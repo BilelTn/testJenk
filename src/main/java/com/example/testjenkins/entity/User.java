@@ -5,6 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.util.Objects;
+
 @Entity
 public class User {
     @Id
@@ -12,6 +14,14 @@ public class User {
     private Long id;
     private String username;
     private String email;
+
+    public User( String username, String email) {
+        this.username = username;
+        this.email = email;
+    }
+    public User(){
+        super();
+    }
 
     // Getters and setters
     public Long getId() {
@@ -36,6 +46,18 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User user)) return false;
+        return Objects.equals(getUsername(), user.getUsername()) && Objects.equals(getEmail(), user.getEmail());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getUsername(), getEmail());
     }
 }
 
